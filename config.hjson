@@ -1,0 +1,53 @@
+{
+  "baseLayer": {
+    /* // xyz瓦片
+        "type": "XYZ",
+        "url": "https://server.arcgisonline.com/ArcGIs/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}", */
+    // wmts 配置
+    "type": "WMTS",
+    "url": "https://iserver.supermap.io/iserver/services/map-world/wmts-china",
+    "projection": "4326",
+    "matrixIdOffest": 1,
+    "extent": [
+      -180,
+      -90,
+      180,
+      90
+    ],
+    "wmtsOption": {
+      "layer": "世界地图",
+      "version": "1.0.0",
+      "matrixSet": "ChinaPublicServices_世界地图",
+      "format": "image/png",
+      "requestEncoding": "KVP",
+      "style": "default"
+    } 
+    /* "url": "https://server.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer/WMTS",
+    "projection": "3857",
+    "extent": [
+      -20037507.067161843,
+      -19971868.8804086,
+      20037507.067161843,
+      19971868.880408484
+    ],
+    "wmtsOption": {
+      "layer": "World_Street_Map",
+      "version": "1.0.0",
+      "matrixSet": "GoogleMapsCompatible",
+      "format": "image/jpeg",
+      "requestEncoding": "KVP",
+      "style": "default"
+    } , */
+    /* "url": "http://t0.tianditu.gov.cn/vec_c/wmts?tk=bfc1d3747bd7b121366a57e2a4070bd9",
+    "projection": "4490",
+    "extent": [ -180, -90, 180, 90 ],
+    "wmtsOption": {
+      "layer": "vec",
+      "version": "1.0.0",
+      "matrixSet": "c",
+      "format": "tiles",
+      "requestEncoding": "KVP",
+      "style": "default"
+    } */
+  }
+}
