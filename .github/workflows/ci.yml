@@ -38,3 +38,4 @@ jobs:
           folder: dist
           # 部署后提交到的分支
           branch: static-pages
+          
