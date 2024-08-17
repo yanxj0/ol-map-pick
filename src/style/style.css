@@ -1,0 +1,19 @@
+@import "ol/ol.css";
+@import './output.css';
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-size: 14px;
+}
+
+.custom-mouse-position {
+  background: var(--ol-partial-background-color);
+  border-radius: 4px;
+  bottom: 40px;
+  left: 8px;
+  padding: 2px;
+  position: absolute;
+  color: black;
+}
